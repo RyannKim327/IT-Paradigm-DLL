@@ -8,6 +8,10 @@ function scroller(id){
 	}, true)
 }
 
+function gotoLink(url){
+	location.href = url
+}
+
 window.onload = () => {
 	const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non turpis in odio gravida pretium. Vestibulum eros dui, iaculis varius vestibulum sed, commodo at ex. Ut felis augue, viverra ac mi in, interdum tincidunt nulla. Etiam nec elit a dolor facilisis facilisis. Curabitur et faucibus dolor, eu fermentum massa."
 	let iteration = 0
@@ -26,6 +30,9 @@ window.onload = () => {
 
 			joiner.id = "joinButton"
 			contactus.id = "contactButton"
+
+			joiner.classList.add("clickBait")
+			contactus.classList.add("clickBait")
 
 			buttons.appendChild(joiner)
 			buttons.appendChild(contactus)
