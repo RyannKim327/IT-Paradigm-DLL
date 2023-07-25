@@ -140,14 +140,14 @@ body{
 	color: var(--baseWhite);
 }
 
-#aboutus {
+#about {
 	background-image: url("assets/images/background-2.png");
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 }
 
-#aboutus  > .title{
+#about  > .title{
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -157,36 +157,134 @@ body{
 	margin-left: -10em;
 }
 
-#aboutus  > .title > h1{
+#about  > .title > h1{
 	font-family: "Russo One", sans-serif;
 	font-variant: small-caps;
 	color: var(--baseWhite);
 	font-size: 3em;
 }
 
-#aboutus > .title > h3{
+#about > .title > h3{
 	font-family: "Rock Salt", serif;
 	font-variant: small-caps;
 	color: var(--baseYellow);
 	font-size: 1.5em;
 }
 
-#aboutus > .base{
+#about > .base{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between	;
+	justify-content: center;
 }
 
-#aboutus > .base > .left{
+#about > .base > *{
+	margin: 0 3em;
+}
+
+#about > .base > .left{
+	display: flex;
+	flex-direction: column;
 	font-family: "Roboto Slab", monospace;
 	color: var(--baseWhite);
 	font-weight: 200;
-	
+	max-width: 35%;
+	justify-items: center;
 }
 
-#aboutus > .base > .right > img{
+#about > .base > .left > h3, #about > .base > .left > p{
+	text-align: right;
+}
+
+#about > .base > .left > .selections{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 1.5em 0;
+}
+
+#about > .base > .left > .selections > *{
+	width: 5em;
+}
+
+#about > .base > .left > #readmore{
+	background-color: transparent;
+	padding: .5em 1em;
+	font-variant: small-caps;
+	border: 2px var(--baseYellow) solid;
+	border-radius: 5em;
+	color: var(--baseYellow);
+	font-family: "Roboto Slab", monospace;
+	align-self: center;
+	justify-self: center;
+	font-size: 1.5em;
+}
+
+#about > .base > .right > img{
 	width: 50%;
 	height: 50vh;
+}
+
+#events{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('assets/images/background-4.png');
+	padding: 2em;
+}
+
+#events > .contents{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	color: var(--baseBlue);
+	margin: 1.5em 0;
+	justify-content: center;
+}
+
+#events > .contents > .content{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#events > .contents > .content > h3, #events > .contents > .content > p, #events > .contents > .content > span{
+	font-family: "Russo One", monospace;
+}
+
+#events > .contents > .content > p{
+	font-size: x-small;
+	font-weight: lighter;
+}
+
+#events > .contents > .content > span{
+	color: var(--baseOrange);
+	align-items: center;
+	align-content: center;
+}
+
+#events > .contents > .content > img{
+	height: 10em;
+	width: 25em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#events > .contents > .content:nth-child(2), #events > .contents > .content:nth-child(5){
+	margin:  0 1.5em;
+}
+
+#events > .eventReadMore{
+	background-color: transparent;
+	border: 2px var(--baseBlue) solid;
+	color: var(--baseBlue);
+	font-family: "Russo One", monospace;
+	border-radius: 5em;
+	padding: .5em 1.5em;
+	font-size: large;
 }
 
 ::-webkit-scrollbar{
