@@ -34,7 +34,7 @@ body{
 }
 
 #index{
-	background-image: url("assets/images/background-3.png");=
+	background-image: url("assets/images/index-background.png");
 }
 
 #index > .top{
@@ -148,7 +148,7 @@ body{
 }
 
 #about {
-	background-image: url("assets/images/background-2.png");
+	background-image: url("assets/images/about-background.png");
 	display: flex;
 	flex-direction: column;
 }
@@ -235,7 +235,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('assets/images/background-4.png');
+	background-image: url('assets/images/events-background.png');
 	padding: 2em;
 }
 

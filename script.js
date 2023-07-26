@@ -19,7 +19,7 @@ window.onload = () => {
 		if(iteration < text.length){
 			_("#description").textContent += text[iteration]
 			iteration++
-			setTimeout(runner, 75)
+			setTimeout(runner, 25)
 		}else{
 			const buttons = _("#buttons")
 			const joiner = document.createElement("button")
@@ -27,6 +27,10 @@ window.onload = () => {
 
 			joiner.textContent = "Join Now!"
 			contactus.textContent = "Contact Us"
+
+			contactus.onclick = () => {
+				scroller("#events")
+			}
 
 			joiner.id = "joinButton"
 			contactus.id = "contactButton"
