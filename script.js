@@ -14,7 +14,6 @@ function gotoLink(url){
 
 window.onload = () => {
 	const text = _("#description").textContent
-	_("#description").textContent = ""
 	let iteration = 0
 	function runner(){
 		if(iteration < text.length){
@@ -30,7 +29,7 @@ window.onload = () => {
 			contactus.textContent = "Contact Us"
 
 			contactus.onclick = () => {
-				scroller("#events")
+				scroller("#contact")
 			}
 
 			joiner.id = "joinButton"
@@ -46,6 +45,8 @@ window.onload = () => {
 	runner()
 }
 
+
+_("#description").textContent = ""
 
 document.body.onscroll = () => {
 	console.log(document.documentElement.scrollTop)
