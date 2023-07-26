@@ -13,13 +13,13 @@ function gotoLink(url){
 }
 
 window.onload = () => {
-	const text = _("#description").textContent
+	const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non turpis in odio gravida pretium. Vestibulum eros dui, iaculis varius vestibulum sed, commodo at ex. Ut felis augue, viverra ac mi in, interdum tincidunt nulla. Etiam nec elit a dolor facilisis facilisis. Curabitur et faucibus dolor, eu fermentum massa."
 	let iteration = 0
 	function runner(){
 		if(iteration < text.length){
 			_("#description").textContent += text[iteration]
 			iteration++
-			setTimeout(runner, 25)
+			setTimeout(runner, 15)
 		}else{
 			const buttons = _("#buttons")
 			const joiner = document.createElement("button")
@@ -44,9 +44,6 @@ window.onload = () => {
 	}
 	runner()
 }
-
-
-_("#description").textContent = ""
 
 document.body.onscroll = () => {
 	console.log(document.documentElement.scrollTop)
