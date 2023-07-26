@@ -337,32 +337,153 @@ hr{
 
 #contact > .top {
 	background-image: url("assets/images/contact-background.png");
-	height: 80vh;
+	height: 75vh;
 	background-attachment: fixed;
 	background-position: center;
 	transform: scaleX(-1);
 	padding: 1em;
 }
 
-#contact > .top > .content > .social{
-	rotate: 39;
-}
-
 #contact > .top > .content{
 	transform: scaleX(-1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contact > .top > .content > h1{
+	font-family: "Russo One", sans-serif;
+	font-variant: small-caps;
+	color: var(--baseWhite);
+}
+
+#contact > .top > .content > h3{
+	font-family: "Rock Salt", serif;
+	font-variant: small-caps;
+	color: var(--baseYellow);
+}
+
+#contact > .top > .content > .socials{
+	rotate: 24deg;
+	width: 30%;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 .5em;
+}
+
+#contact > .top > .content > .socials > div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: -12em;
+	margin-left: -5em;
+	align-self: flex-start;
+	width: 100%;
+}
+
+#contact > .top > .content > .socials > div >.item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Roboto Slab", serif;
+}
+
+#contact > .top > .content > .socials > div > .item > .circle{
+	background-color: var(--baseBlue);
+	border-radius: 50em;
+	padding: 1em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#contact > .top > .content > .socials > .others{
+	display: flex;
+	flex-direction: column;
+	font-size: smaller;
+	margin-top: -10em;
+	margin-left: -1em;
+}
+
+#contact > .top > .content > .socials > .others > .item{
+	display: flex;
+	flex-direction: row;
+}
+
+#contact > .top > .content > .socials > div > .item > .circle > svg,
+#contact > .top > .content > .socials > .others > .item  > svg {
+	rotate: -25deg;
+}
+
+#contact > .top > .content > .form{
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	margin: 2em;
+	width: 50%;
+}
+
+#contact > .top > .content > .form > *{
+	border: 3px var(--baseYellow) solid;
+	border-radius: 1em;
+	background-color: transparent;
+	padding: 1.5em 1em;
+	font-family: "Roboto Slab", sans-serif;
+	color: var(--baseWhite);
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: .25em;
+}
+
+#contact > .top > .content > .form > *::placeholder{
+	color: var(--baseBlue);
+}
+
+#contact > .top > .content > .form > input[type='submit']{
+	background-color: var(--baseYellow);
+	color: var(--baseBlue);
+	font-size: larger;
+	width: auto;
+	align-self: center;
+	padding: .5em .75em;
 }
 
 #contact > .middle{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	justify-items: center;
 	padding: 0 5em;
 }
 
 #contact > .middle > .rows{
 	display: flex;
 	flex-direction: column;
+	width: 25%;
+}
+
+#contact > .middle > .rows > .others{
+	display: flex;
+	flex-direction: row;
+}
+
+#contact > .middle > .rows > span{
+	color: var(--baseBlue);
+	font-family: "Roboto Slab", serif;
+}
+
+#contact > .middle > .rows > .others > .circle{
+	background-color: var(--baseBlue);
+	border-radius: 50%;
+	padding: .43em .25em;
+	margin: 0 .1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
 #contact > .middle > .rows > h2{
