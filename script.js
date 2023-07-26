@@ -48,5 +48,5 @@ window.onload = () => {
 
 
 document.body.onscroll = () => {
-	console.log(document.body.scrollTop)
+	console.log(document.documentElement.scrollTop)
 }
