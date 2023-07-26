@@ -365,6 +365,15 @@ hr{
 	flex-direction: column;
 }
 
+#contact > .middle > .rows > h2{
+	font-family: "Roboto Slab", serif;
+}
+
+#contact > .middle > .rows > .blue{
+	color: var(--baseBlue);
+	font-family: "Roboto Slab", serif;
+}
+
 #contact > .footer{
 	justify-items: center;
 	text-align: center;
