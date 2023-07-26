@@ -70,6 +70,19 @@ body{
 	margin: 0 1em;
 }
 
+#index > .top > nav > ul > li::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: var(--baseBlue);
+	transition: width .3s;
+}
+
+#index > .top > nav > ul > li:hover::after{
+	width: 100%;
+}
+
 #index > .top > .socials{
 	display: flex;
 	flex-direction: row;
@@ -77,8 +90,8 @@ body{
 }
 
 #index > .top > .socials > *{
-	width: 1.5em;
 	align-self: center;
+	padding: .5em;
 }
 
 #index > .top > .socials > *:nth-child(even){
