@@ -140,6 +140,7 @@ body{
 #index > .body > .left > #buttons > #joinButton{
 	border: .20em var(--baseOrange) solid;
 	color: var(--baseOrange);
+	background-color: transparent;
 }
 
 #index > .body > .left > #buttons > #contactButton{
